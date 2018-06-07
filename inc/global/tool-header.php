@@ -10,7 +10,7 @@
 					<i class="icon icon-aaa fill-white">
 		                <svg><use xlink:href="/img/spritemap.svg#bull-interactive-logo"></use><svg>
 		            </i>
-					<span class="visuallyhidden">Cohere</span>
+					<span class="visuallyhidden">Bull Interactive</span>
 				</a>
 
 			</div>
@@ -47,74 +47,34 @@
 	<div class="nav-wrap-inner">
 
 		<div class="align-text-right">
-			<a href="#" class="button-link tool-menu-button">Close</a>
+			<a href="#" class="button-link button-link-default alt tool-menu-button">Close</a>
 		</div>
-
-        <?php 
-
-       		$tempServerPath = $_SERVER['DOCUMENT_ROOT'] . "/inc/templates";
-        	$tempPath = "/inc/templates";
-			if (count(glob($tempServerPath)) > "0" ) { 
-
-		?>
-	
-			<div class="nav-group">
-				
-				<h4>Applications</h4>
-
-				<ul>
-
-	                <?php foreach( glob( $tempServerPath.'/*.php' ) as $template ) : ?>
-
-	                	<?php $templateName = basename($template, ".php"); ?>
-
-	                    <?php if ( $templateName !== "index" ) { ?>
-	                     		
-	                     	<li>
-	
-								<a href="<?php echo $tempPath."?template=".$templateName; ?>">
-									
-	                                <?php echo ucwords( str_replace( '-', ' ', $templateName ) ); ?>
-
-	                            </a>
-
-							</li>
-
-						<?php }  ?>
-	                    
-	                <?php endforeach; ?>
-
-	            </ul>
-
-			</div>
-
-		<?php } ?>
 
  		<?php 
 
- 			$modServerPath = $_SERVER['DOCUMENT_ROOT'] . "/inc/modules";
- 			$modPath = "/inc/modules";
-			if (count(glob($modServerPath)) > "0" ) { 
+ 			$componentServerPath = $_SERVER['DOCUMENT_ROOT'] . "/inc/components";
+ 			$componentPath = "/inc/components";
+			if (count(glob($componentServerPath)) > "0" ) { 
 
 		?>
 
 			<div class="nav-group">
 
-				<h4>Modules</h4>
+				<h4>Components</h4>
 
 				<ul>
 
-	                <?php foreach( glob( $modServerPath.'/*.php' ) as $module ) : ?>
+	                <?php foreach( glob( $componentServerPath.'/*.php' ) as $component ) : ?>
 
-	                	<?php $moduleName = basename($module, ".php"); ?>
+	                	<?php $componentName = basename($component, ".php"); ?>
 
-	                    <?php if ( $moduleName !== "index" ) { ?>
+	                    <?php if ( $componentName !== "index" ) { ?>
 	                     		
 	                     	<li>
 	
-								<a href="<?php echo $modPath."?module=".$moduleName; ?>">
+								<a href="<?php echo $componentPath."?component=".$componentName; ?>">
 									
-	                                <?php echo ucwords( str_replace( '-', ' ', $moduleName ) ); ?>
+	                                <?php echo ucwords( str_replace( '-', ' ', $componentName ) ); ?>
 
 	                            </a>
 
@@ -169,6 +129,48 @@
 			</div>
 
 		<?php } ?>
+
+		        <?php 
+
+       		$tempServerPath = $_SERVER['DOCUMENT_ROOT'] . "/inc/templates";
+        	$tempPath = "/inc/templates";
+			if (count(glob($tempServerPath)) > "0" ) { 
+
+		?>
+	
+			<div class="nav-group">
+				
+				<h4>Templates</h4>
+
+				<ul>
+
+	                <?php foreach( glob( $tempServerPath.'/*.php' ) as $template ) : ?>
+
+	                	<?php $templateName = basename($template, ".php"); ?>
+
+	                    <?php if ( $templateName !== "index" ) { ?>
+	                     		
+	                     	<li>
+	
+								<a href="<?php echo $tempPath."?template=".$templateName; ?>">
+									
+	                                <?php echo ucwords( str_replace( '-', ' ', $templateName ) ); ?>
+
+	                            </a>
+
+							</li>
+
+						<?php }  ?>
+	                    
+	                <?php endforeach; ?>
+
+	            </ul>
+
+			</div>
+
+		<?php } ?>
+
+        <?php // Add comments glob next ?>
 
 	</div>
 

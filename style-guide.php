@@ -469,7 +469,7 @@
 								<div class="icon-row flex-wrapper">
 									
 									<i class="icon icon-aaa red flex-item">
-						                <svg><use xlink:href="/img/spritemap.svg#aaa-logo"></use><svg>
+						                <svg><use xlink:href="/img/spritemap.svg#bull-interactive-logo"></use><svg>
 						            </i>
 
 						            <i class="icon icon-wheel blue flex-item">
@@ -500,7 +500,7 @@
 
 						<div class="description">
 							
-							<p>Secondary Icons – Used to support UI elements in various places throughout our modules.</p>
+							<p>Secondary Icons – Used to support UI elements in various places throughout our components.</p>
 
 						</div>
 						
@@ -637,11 +637,11 @@
 
 				<span class="example-title">Tables &amp; Comparisson Chart</span>
 				
-				<?php include 'inc/modules/molecules/table-marks.php'; ?>
+				<?php include 'inc/components/molecules/table-marks.php'; ?>
 
 				<span class="spacer spacer-md-3"></span>
 				
-				<?php include 'inc/modules/molecules/table-text.php'; ?>
+				<?php include 'inc/components/molecules/table-text.php'; ?>
 
 			</div>
 

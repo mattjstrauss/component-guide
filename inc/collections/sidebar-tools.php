@@ -6,21 +6,9 @@
 
 			<div class="col-sm-12 col-md-4 col-md-offset-8">
 
-				<?php include '../modules/molecules/section-heading-red.php' ?>
+				<?php include '../components/molecules/section-heading-red.php' ?>
 
-				<?php include '../modules/molecules/login-form.php' ?>
-
-			</div>
-
-		</div>
-
-		<span class="spacer spacer-sm-3 spacer-md-1 spacer-lg-1"></span>
-
-		<div class="row">
-
-			<div class="col-sm-12 col-md-4 col-md-offset-8">
-
-				<?php include '../modules/molecules/well-quick-links.php' ?>
+				<?php include '../components/molecules/login-form.php' ?>
 
 			</div>
 
@@ -32,7 +20,7 @@
 
 			<div class="col-sm-12 col-md-4 col-md-offset-8">
 
-				<?php include '../modules/molecules/well-quick-links-actions.php' ?>
+				<?php include '../components/molecules/well-quick-links.php' ?>
 
 			</div>
 
@@ -44,7 +32,19 @@
 
 			<div class="col-sm-12 col-md-4 col-md-offset-8">
 
-				<?php include '../modules/molecules/well-aside.php' ?>
+				<?php include '../components/molecules/well-quick-links-actions.php' ?>
+
+			</div>
+
+		</div>
+
+		<span class="spacer spacer-sm-3 spacer-md-1 spacer-lg-1"></span>
+
+		<div class="row">
+
+			<div class="col-sm-12 col-md-4 col-md-offset-8">
+
+				<?php include '../components/molecules/well-aside.php' ?>
 
 			</div>
 

@@ -1,14 +1,53 @@
-@import '_fonts';
-@import '_reset';
-@import '_variables';
-@import '_mixins';
-@import '_grid';
+// 1. Setup to create instances to be used throughout all other styles
+// ===================================================================
 
-@import '_format';
-@import '_helpers';
+@import 
+	'utilities/_fonts',
+	'utilities/_variables',
+	'utilities/_mixins',
+	'utilities/_helpers';
 
-@import '_tool';
+// 2. Base to reset and structure the foundation
+// ===================================================================
 
-@import '_style-guide';
+@import 
+	'base/_reset',
+	'base/_grid',
+	'base/_format';
 
-@import '_header';
+// 3. Reusable nodes or groups of nodes called components
+// ===================================================================
+
+@import
+	'components/_accordion',
+	'components/_breadcrumbs',
+	'components/_cards',
+	'components/_flexbox',
+	'components/_flexbox',
+	'components/_heros',
+	'components/_login',
+	'components/_maps',
+	'components/_news-link',
+	'components/_pagination',
+	'components/_search-list',
+	'components/_section-headings',
+	'components/_slick',
+	'components/_table',
+	'components/_wells';
+
+// 4. Groups of nodes that appear typically once per page
+// ===================================================================
+
+@import 
+	'blocks/_header',
+	'blocks/_footer';
+
+// 5. A collection of blocks and components
+// ===================================================================
+
+@import 'pages/_style-guide';
+
+// 6. Project specific css to help shape the "tool"
+// ===================================================================
+
+@import 'tool/_tool';

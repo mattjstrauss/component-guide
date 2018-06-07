@@ -6,7 +6,7 @@
 
 			<div class="col-sm-12">
 
-				<?php include '../modules/molecules/results-form.php'; ?>
+				<?php include '../components/molecules/results-form.php'; ?>
 
 			</div>
 
@@ -16,7 +16,7 @@
 
 			<div class="col-sm-12">
 
-				<?php include '../modules/molecules/search-list.php'; ?>
+				<?php include '../components/molecules/search-list.php'; ?>
 
 			</div>
 
@@ -26,7 +26,7 @@
 
 			<div class="col-sm-12">
 
-				<?php include '../modules/molecules/pagination.php'; ?>
+				<?php include '../components/molecules/pagination.php'; ?>
 
 			</div>
 

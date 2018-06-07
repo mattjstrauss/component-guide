@@ -8,7 +8,7 @@
 
 				<div class="col-sm-12 flex-item">
 
-					<?php include '../modules/molecules/card-feature-carousel.php'; ?>
+					<?php include '../components/molecules/card-feature-carousel.php'; ?>
 
 				</div>
 
@@ -24,7 +24,7 @@
 
 				<div class="col-sm-12 flex-item">
 
-					<?php include '../modules/molecules/card-feature.php'; ?>
+					<?php include '../components/molecules/card-feature.php'; ?>
 
 				</div>
 
@@ -40,13 +40,13 @@
 
 				<div class="col-sm-6 flex-item">
 
-					<?php include '../modules/molecules/card.php'; ?>
+					<?php include '../components/molecules/card.php'; ?>
 
 				</div>
 
 				<div class="col-sm-6 flex-item">
 
-					<?php include '../modules/molecules/card.php'; ?>
+					<?php include '../components/molecules/card.php'; ?>
 
 				</div>
 
@@ -62,19 +62,19 @@
 
 				<div class="col-sm-4 flex-item">
 
-					<?php include '../modules/molecules/card-medium.php'; ?>
+					<?php include '../components/molecules/card-medium.php'; ?>
 
 				</div>
 
 				<div class="col-sm-4 flex-item">
 
-					<?php include '../modules/molecules/card-medium.php'; ?>
+					<?php include '../components/molecules/card-medium.php'; ?>
 
 				</div>
 
 				<div class="col-sm-4 flex-item">
 
-					<?php include '../modules/molecules/card-medium.php'; ?>
+					<?php include '../components/molecules/card-medium.php'; ?>
 
 				</div>
 
@@ -90,25 +90,25 @@
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-small.php'; ?>
+					<?php include '../components/molecules/card-small.php'; ?>
 
 				</div>
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-small.php'; ?>
+					<?php include '../components/molecules/card-small.php'; ?>
 
 				</div>
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-small.php'; ?>
+					<?php include '../components/molecules/card-small.php'; ?>
 
 				</div>
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-small.php'; ?>
+					<?php include '../components/molecules/card-small.php'; ?>
 
 				</div>
 
@@ -124,25 +124,25 @@
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-inset-border.php'; ?>
+					<?php include '../components/molecules/card-inset-border.php'; ?>
 
 				</div>
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-inset-border.php'; ?>
+					<?php include '../components/molecules/card-inset-border.php'; ?>
 
 				</div>
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-inset-border.php'; ?>
+					<?php include '../components/molecules/card-inset-border.php'; ?>
 
 				</div>
 
 				<div class="col-sm-3 flex-item">
 
-					<?php include '../modules/molecules/card-inset-border.php'; ?>
+					<?php include '../components/molecules/card-inset-border.php'; ?>
 
 				</div>
 

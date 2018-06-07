@@ -6,7 +6,7 @@
 
 			<div class="col-sm-12">
 
-				<?php include '../modules/molecules/section-heading-link-gold.php' ?>
+				<?php include '../components/molecules/section-heading-link-gold.php' ?>
 
 			</div>
 
@@ -18,19 +18,19 @@
 
 				<div class="col-sm-4 flex-item">
 
-					<?php include '../modules/molecules/card-medium.php'; ?>
+					<?php include '../components/molecules/card-medium.php'; ?>
 
 				</div>
 
 				<div class="col-sm-4 flex-item">
 
-					<?php include '../modules/molecules/card-medium.php'; ?>
+					<?php include '../components/molecules/card-medium.php'; ?>
 
 				</div>
 
 				<div class="col-sm-4 flex-item">
 
-					<?php include '../modules/molecules/news-link.php' ?>
+					<?php include '../components/molecules/news-link.php' ?>
 				</div>
 
 			</div>
