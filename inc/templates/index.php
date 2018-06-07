@@ -4,8 +4,6 @@
 
 	<?php include_once('../global/tool-header.php'); ?>
 	
-
-
     <div class="template-wrapper">
 
         <?php include_once "$templateFile.php"; ?>

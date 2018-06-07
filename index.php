@@ -142,7 +142,7 @@
 				                     		
 				                     	<li>
 				
-											<a href="<?php echo $templatePath."?collection=".$templateName; ?>">
+											<a href="<?php echo $templatePath."?template=".$templateName; ?>">
 												
 				                                <?php echo ucwords( str_replace( '-', ' ', $templateName ) ); ?>
 
