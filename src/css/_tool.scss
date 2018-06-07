@@ -1,0 +1,434 @@
+// Basic tool styling
+// -------------------------
+#tool-header {
+  background: $black;
+  padding: 15px 0;
+  .table-wrap {
+    display: table;
+    width: 100%;
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+    }
+  }
+  .logo {
+    a {
+      font-weight: bold;
+      font-size: 2em;
+      color: $white;
+    }
+  }
+  svg {
+    width: 100px;
+    height: 60px;
+    float: left;
+  }
+}
+#tool-footer {
+  height: 120vh;
+  width: 100%;
+  background: $black;
+}
+#tool-sidebar {
+  margin-bottom: 20px;
+  ul {
+    max-width: 165px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    padding: 5px 10px;
+    display: block;
+    &.active {
+      background: $black;
+      color: $white;
+    }
+  }
+  .fixed-sidebar & {
+    position: fixed;
+    top: 105px;
+  }
+  .hug-footer & {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+#tool-content {
+  position: relative;
+}
+#tool-examples {
+  .fixed-sidebar &,
+  .hug-footer & {
+    @include breakFirst(medium) {
+      margin-left: 25%;
+    }
+  }
+}
+#tool-nav {
+  position: fixed;
+  width: 300px;
+  background: lighten($black, 15%);
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2000;
+  overflow-y: scroll;
+  transform: translateX(100%);
+  @include trans(all);
+  .active-tool-nav & {
+    transform: translateX(0);
+  }
+  .nav-wrap-inner {
+    padding: 30px;
+  }
+  .nav-group {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  h4 {
+    border-bottom: 1px solid;
+    border-color: lighten($black, 30%);
+    padding-bottom: 10px;
+  }
+  h4 {
+    color: $white;
+  }
+  ul {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+    li {
+      display: block;
+      width: 100%;
+    }
+    a {
+      color: $white;
+      &:hover, &:focus {
+        opacity: .6;
+      }
+    }
+  }
+}
+.example-block {
+  padding: 30px 0;
+  margin: 0 0 20px;
+}
+#overview {
+  padding: 0px 0;
+}
+.module-rules {
+  margin: 50px 0;
+  background: $greyDark;
+  color: $black;
+  padding: 40px;
+}
+.content-label {
+  margin: 30px 0 35px;
+}
+.template-wrapper {
+  #header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+.tool-header-trigger {
+  display: none;
+}
+.template-page {
+  #tool-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1999;
+    transform: translateY(-100%);
+    @include trans(all);
+    .tool-header-trigger {
+      display: block;
+      height: 45px;
+      width: 45px;
+      position: absolute;
+      top: 100%;
+      left: 10px;
+      background: $grey;
+      .icon {
+        color: $white;
+      }
+      svg {
+        padding: 7px;
+      }
+      .icon, svg {
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+  &.active-tool-header {
+    #tool-header {
+      transform: translateY(0);
+    }
+    .tool-header-trigger {
+      svg {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+.module-link {
+  position: absolute !important;
+  top: 10px !important;
+  right: 20px !important;
+  background: $white !important;
+  color: $black !important;
+  line-height: 100% !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  height: 25px !important;
+  border: 2px solid $grey !important;
+  padding: 0 !important;
+  opacity: 0;
+  visibility: hidden;
+  text-transform: none !important;
+  font-family: $bodyFont !important;
+  box-shadow: none !important;
+  @include trans(all);
+  .module-page & {
+    display: none !important;
+  }
+  .module-page.collection-page & {
+    display: block !important;
+  }
+  .info-icon {
+    background: transparent !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 45% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    text-transform: none !important;
+    margin-top: 0px !important;
+  }
+  .tool-tip {
+    position: absolute !important;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 255px !important;
+    background: white !important;
+    right: 40px !important;
+    text-align: center !important;
+    line-height: 175% !important;
+    border-radius: 15px !important;
+    top: 0 !important;
+    z-index: 100 !important;
+    border: 2px solid $grey !important;
+    text-transform: none !important;
+    @include trans(all);
+  }
+  &:hover, &:focus {
+    .tool-tip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.card, .hero, .accordion-wrap, .section-heading, .breadcrumbs, .table-wrapper, .well, #footer, #header {
+  &:hover {
+    .module-link {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.hero.large, [class*='neg'] .hero {
+  .module-link {
+    top: 50px !important;
+  }
+}
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+django+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+puppet+pure+python+q+qore+r+jsx+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+vbnet+verilog+vhdl+vim+wiki+xojo+yaml&plugins=line-numbers+unescaped-markup */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #e6db74;
+}
+
+.token.keyword {
+  color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+  position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+  .line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+  }
+
+    .line-numbers-rows > span:before {
+      content: counter(linenumber);
+      color: #999;
+      display: block;
+      padding-right: 0.8em;
+      text-align: right;
+    }
+/* Fallback, in case JS does not run, to ensure the code is at least visible */
+.lang-markup script[type='text/plain'],
+.language-markup script[type='text/plain'],
+script[type='text/plain'].lang-markup,
+script[type='text/plain'].language-markup {
+  display: block;
+  font: 100% Consolas, Monaco, monospace;
+  white-space: pre;
+  overflow: auto;
+}
+
