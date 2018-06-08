@@ -12,7 +12,7 @@
 
 	            <div class="col-sm-12">
 
-	                <h1 class="content-label">Table Of Contents</h1>
+	                <h1 class="component-label">Table Of Contents</h1>
 
 	            </div>
 
