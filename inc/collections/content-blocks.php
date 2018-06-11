@@ -88,25 +88,25 @@
 
 			<div class="flex-wrapper flex-columns">
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-6 col-lg-3 flex-item">
 
 					<?php include '../components/molecules/card-small.php'; ?>
 
 				</div>
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-6 col-lg-3 flex-item">
 
 					<?php include '../components/molecules/card-small.php'; ?>
 
 				</div>
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-6 col-lg-3 flex-item">
 
 					<?php include '../components/molecules/card-small.php'; ?>
 
 				</div>
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-6 col-lg-3 flex-item">
 
 					<?php include '../components/molecules/card-small.php'; ?>
 
@@ -122,25 +122,25 @@
 
 			<div class="flex-wrapper flex-columns">
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-3 flex-item">
 
 					<?php include '../components/molecules/card-inset-border.php'; ?>
 
 				</div>
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-3 flex-item">
 
 					<?php include '../components/molecules/card-inset-border.php'; ?>
 
 				</div>
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-3 flex-item">
 
 					<?php include '../components/molecules/card-inset-border.php'; ?>
 
 				</div>
 
-				<div class="col-sm-3 flex-item">
+				<div class="col-sm-6 col-md-3 flex-item">
 
 					<?php include '../components/molecules/card-inset-border.php'; ?>
 
@@ -154,7 +154,7 @@
 
 			<div class="col-sm-12">
 				
-				<div class="module-rules">
+				<div class="component-rules">
 					<p>Used throughout the site to feature and drive users to deeper content. The size of the content block denotes its hierarchy and should be displayed accordingly. This is especially important on mobile devices, as its order that denotes hierarchy.</p>
 
 					<p><em>Mobile – Feature, and two column blocks render the same on mobile. Three and four column blocks render in a similar fashion but with adjusted headerstyles and buttons.</em></p>

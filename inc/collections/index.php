@@ -10,7 +10,7 @@
 
             <div class="col-sm-12">
 
-                <h1 class="module-label"><?php echo ucwords( str_replace( '-', ' ', $collectionFile ) ); ?></h1>
+                <h1 class="component-label"><?php echo ucwords( str_replace( '-', ' ', $collectionFile ) ); ?></h1>
 
             </div>
 
@@ -20,7 +20,7 @@
 	
 
 
-    <div class="module-wrapper">
+    <div class="component-wrapper">
 
         <?php include_once "$collectionFile.php"; ?>
 

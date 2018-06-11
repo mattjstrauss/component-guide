@@ -38,7 +38,7 @@
 
 			<div class="col-sm-12">
 				
-				<div class="module-rules">
+				<div class="component-rules">
 					
 					<p>Search results should always be displayed between both the search header bar (Results Form), and pagination (Pagination). Ideally no more than 10 results would be displayed on any one page. </p>
 

@@ -41,7 +41,7 @@
 
 			<div class="col-sm-12">
 				
-				<div class="module-rules">
+				<div class="component-rules">
 					
 					<p>Used on the index page and business-line landing pages to display featured initiatives that may live deeper in the site. A header bar will always accompany this module, and will be selected based on the content the module houses. Two feature blocks modeled of on the Three – Four column content block style coupled with listed content (consisting of a title and source). The title and arrow can be clickable.</p>
 

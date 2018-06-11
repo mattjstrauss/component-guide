@@ -54,7 +54,7 @@
 
 			<div class="col-sm-12 col-md-4 col-md-offset-8">
 
-				<div class="module-rules">
+				<div class="component-rules">
 					<p>Four variants are available for Sidebar Tools. Each has a unique functionality. Only one may be used per page.</p>
 
 					<ul>
